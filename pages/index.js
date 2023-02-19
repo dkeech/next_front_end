@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Projects from "../components/Projects";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
       <Head>
         <title>Dan Keech | Web Developer</title>
         <meta name="description" content="Dan Keech's portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/favicon.ico" />
+        
       </Head>
       <Navbar />
       <Main />

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { Icon } from '@iconify/react'
 
 
 const Navbar = () => {
@@ -14,19 +15,17 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/navLogo.png"
-          alt=""
-          width={87}
-          height={35}
-        />
+
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-50">
+      <Link href="/">
+      <Icon icon="material-symbols:code-blocks-rounded" color="#666" width={72} />
+      </Link>
         <div className="flex justify-end px-2 w-full">
           <ul className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
             <Link href="/">
@@ -54,12 +53,7 @@ const Navbar = () => {
 
             <div>
               <div className="flex w-full items-center justify-between">
-                <Image
-                  src="/../public/assets/navLogo.png"
-                  alt="/"
-                  width="87"
-                  height="35"
-                />
+              <Icon icon="material-symbols:code-blocks-rounded" size={60} />
                 <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                   <AiOutlineClose />
                 </div>
@@ -75,7 +69,7 @@ const Navbar = () => {
                 <Link href="/">
                   <li className="py-4 text-sm">Home</li>
                 </Link>
-                <Link href="/">
+                <Link href="/#about">
                   <li className="py-4 text-sm">About</li>
                 </Link>
                 <Link href="/">
