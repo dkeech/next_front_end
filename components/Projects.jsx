@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Project from "./Project";
 
 const baseURL = "http://localhost:8000/wp-json/wp/v2/projects/";
 
@@ -19,14 +20,21 @@ export default function Projects() {
   }, []);
 
   if (isLoaded) {
-    return projects.map((project) => (
-      <div key={project.id}>
-        <h2>{project.title.rendered}</h2>
-        <div dangerouslySetInnerHTML={{ __html: project.content.rendered }} />
-      </div>
-    ));
+    return (
+      <div id="projects" className="w-full p-8 m-auto flex flex-col justify-center items-center py-16 ">
+      <h2>Projects</h2>
+        {projects.map((project) => (
+          <Project 
+            key={project.id} 
+            title={project.title.rendered} 
+            image={project.acf.main_image}
+            content={project.content.rendered} />
+
+      ))}
+    </div>
+    )
   } else {
-    return <div>Loading...</div>;
+    return <h2 className="text-center py-16">Projects Loading...</h2>;
   }
 }
 

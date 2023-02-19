@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -19,7 +20,9 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <a href="https://www.linkedin.com/in/dankeech/" target="_blank">
                 <FaLinkedin size={30} />
+                </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithubSquare size={30} />
@@ -27,9 +30,7 @@ const Main = () => {
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail size={30} />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedin size={30} />
-            </div>
+
           </div>
         </div>
       </div>
