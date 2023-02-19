@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const School = (props) => {
   const img = props.image;
@@ -11,7 +12,8 @@ const School = (props) => {
         <div className="flex flex-col justify-center items-center">
           <div>
             <h2 className="py-8 text-center ">{title}</h2>
-            <img className="m-auto max-h-[225px]" src={img} alt={title} />
+            <Image className="m-auto max-h-[225px]" src={img} alt={title} width={100} height={100}/>
+            
           </div>
           <div
             className="m-auto school-card "

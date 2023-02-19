@@ -24,7 +24,7 @@ export default function Education() {
     return (
         <div id="education" className="flex flex-col h-full">
         <h2 className="text-center pt-[200px]">Education</h2>
-      <div id="schools" className="w-full p-8 m-auto flex items-stretch justify-center py-16 ">
+      <div id="schools" className="w-full p-8 m-auto flex flex-wrap items-stretch justify-center py-16 ">
 
         {schools.map((school) => (
           <School 

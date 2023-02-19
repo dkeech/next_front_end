@@ -11,6 +11,7 @@ const Skills = () => {
         <Skill img="wordpress" title="WordPress" />
         <Skill img="javascript" title="JavaScript" />
         <Skill img="php" title="PHP" />
+        <Skill img="sql" title="SQL" />
         <Skill img="react" title="React" />
         <Skill img="nextjs" title="Next.js" />
         <Skill img="tailwind" title="Tailwind" />

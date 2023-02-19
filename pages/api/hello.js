@@ -1,5 +1,13 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import Navbar from '../../components/Navbar';
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
+  );
 }
+
+export default MyApp;
