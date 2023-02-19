@@ -25,7 +25,7 @@
   p {
     @apply py-2
   }
-  .project-card ul {
+  .project-card ul, .school-card ul {
     @apply list-disc list-outside ml-8
   }
   .project-card img {

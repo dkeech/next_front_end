@@ -22,8 +22,10 @@ export default function Projects() {
   if (isLoaded) {
     return (
       <div id="projects" className="w-full p-8 m-auto flex flex-col justify-center items-center py-16 ">
-      <h2>Projects</h2>
-        {projects.map((project) => (
+      <h2 className="pt-[200px]">Projects</h2>
+        {projects.slice(0,6).filter(project => {
+          return project.acf.display_order < 51
+        }).map((project) => (
           <Project 
             key={project.id} 
             title={project.title.rendered} 
