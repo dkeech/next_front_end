@@ -12,7 +12,7 @@ const Project = (props) => {
         <div className="flex flex-col justify-center items-center">
           <div>
             <h2 className="py-8 text-center ">{title}</h2>
-            <Image src={img} alt={title} />
+            <Image src={img} alt={title} width={1200} height={900} />
           </div>
           <div
             className="m-auto project-card max-w-2xl"
