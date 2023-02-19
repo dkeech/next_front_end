@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Project from "./Project";
 
-const baseURL = "http://localhost:8000/wp-json/wp/v2/projects/";
+const siteBase = "https://dankeech.com"
+const baseURL = `${siteBase}/wp-json/wp/v2/projects/`;
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);

@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import School from "./School";
 
-const baseURL = "http://localhost:8000/wp-json/wp/v2/school/";
+const siteBase = "https://dankeech.com"
+const baseURL = `${siteBase}/wp-json/wp/v2/school/`;
 
 export default function Education() {
   const [schools, setSchools] = useState([]);
