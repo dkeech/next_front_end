@@ -7,7 +7,7 @@ const Main = () => {
     <div className="w-full h-screen flex justify-center text-center">
         
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
-      <img src="/assets/dan_k-2.jpg" alt="" className="my-4 h-40 rounded-lg shadow-gray-400 shadow-lg center-content object-cover" />
+      
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
             Let's build some things together!
