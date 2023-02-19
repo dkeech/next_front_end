@@ -18,8 +18,8 @@ const About = () => {
           <Image
             src="/assets/dan_k-2.jpg"
             alt="Dan Keech"
-            width={300}
-            height={450}
+            width={180}
+            height={270}
             className="my-4 h-60 md:h-auto rounded-lg shadow-gray-400 shadow-lg m-auto "
           />
         </div>
