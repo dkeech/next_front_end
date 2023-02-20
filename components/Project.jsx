@@ -8,7 +8,7 @@ const Project = (props) => {
 
   return (
     <div className="flex flex-wrap py-8 px-4">
-      <div className=" max-w-2xl p-6 shadow-xl rounded-xl hover:scale-102 ease-in duration-300">
+      <div className="p-6 shadow-xl rounded-xl hover:scale-102 ease-in duration-300">
         <div className="flex flex-col justify-center items-center">
           <div>
             <h2 className="py-8 text-center ">{title}</h2>
