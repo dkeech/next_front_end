@@ -24,7 +24,7 @@ export default function Projects() {
     return (
       <div
         id="projects"
-        className="project-card max-w-xl w-full p-8 m-auto flex flex-col justify-center items-center py-16 "
+        className="w-full p-8 m-auto flex flex-col justify-center items-center py-16 "
       >
         <h2 className="pt-[200px]">Projects</h2>
         {projects
