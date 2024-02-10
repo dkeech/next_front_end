@@ -28,7 +28,8 @@ export default function Projects() {
       >
         <h2 className="pt-[200px]">Projects</h2>
         {projects
-          .slice(0, 6)
+          .sort((a, b) => a.acf.display_order - b.acf.display_order)
+          .slice(0, 10)
           .filter((project) => {
             return project.acf.display_order < 51;
           })

@@ -6,14 +6,41 @@ const About = () => {
     <div id="about" className="w-full md:h-screen p-8 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-6 gap-8">
         <div className="col-span-3 col-start-2">
-          <h2 id="about" className="uppercase py-2">About</h2>
+          <h2 id="about" className="uppercase py-2">
+            About
+          </h2>
           <p>
-            I am a web developer with a passion for creating beautiful and functional websites. Web development was not my first career. I owned a carpet cleaning
-            business, and as a small business owner, I wore many hats. One of those hats was the web developer hat. I made my own websites for years, and I became pretty good at it. </p>
-            <p>My big break was when I suffered a serious knee injury that was bad enough to require two surgeries and most of a year on crutches. During that time I started going back to school. I loved digging in, learning new technologies, and figuring out ways to build things better, stronger, faster. I left the small business world to do work that I loved.</p> 
-            <p>My goal is to build websites that are beautiful, responsive, accessible, and high-performing. I specialize in building websites in WordPress, but I also have experience with React, Next, and Node. I am always learning new technologies and looking for ways to improve my skills.
+            I am a web developer with a passion for creating beautiful and
+            functional websites. Web development was not my first career. I
+            owned a carpet cleaning business, and as a small business owner, I
+            wore many hats. One of those hats was the web developer hat. I made
+            my own websites for years, and I became pretty good at it.{" "}
           </p>
-          <p><a className="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" href="https://dankeech.com/wp-content/uploads/2023/02/Dan_Keech_Resume_2023.pdf" target="_blank" rel="noreferrer">My Resume</a></p>
+          <p>
+            My big break (ha ha) was when I suffered a serious knee injury that
+            was bad enough to require two surgeries and most of a year on
+            crutches. During that time I started going back to school. I loved
+            digging in, learning new technologies, and figuring out ways to
+            build things better, stronger, faster. I left the small business
+            world to do work that I loved.
+          </p>
+          <p>
+            My goal is to build websites that are beautiful, responsive,
+            accessible, and high-performing. I specialize in building websites
+            in WordPress, but I also have experience with React, Next, and Node.
+            I am always learning new technologies and looking for ways to
+            improve my skills.
+          </p>
+          <p>
+            <a
+              className="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+              href="http://dankeech.com/wp-content/uploads/2024/02/Dan-Keech-Resume-2024.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              My Resume
+            </a>
+          </p>
         </div>
         <div className="flex flex-col justify-center">
           <Image
