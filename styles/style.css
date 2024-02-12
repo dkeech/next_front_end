@@ -1,4 +1,11 @@
 .project-card {
   width: 800px;
-  max-width: 90%;
+  max-width: 100%;
+}
+.project-card img {
+  max-width: 100%;
+  height: auto;
+}
+.project-card div {
+  max-width: 100%;
 }
